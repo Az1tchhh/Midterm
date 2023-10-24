@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.div-row{
+  display: flex;
+  flex-direction: row;
+}
+.div-column{
+  display: flex;
+  flex-direction: column;
+}
+body{
+  font-family: Bahnschrift;
+  margin: 0;
+  background-color: green;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: monospace;
+  margin: 8px;
+}
+p{
+  font-family: "Lucida Bright", serif;
+}
+

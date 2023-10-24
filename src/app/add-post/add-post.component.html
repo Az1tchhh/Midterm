@@ -1,0 +1,9 @@
+<input type = "text"
+       placeholder = "Name of your post"
+       class = "user_input_text"
+       [(ngModel)]="thePostName">
+<button type="submit" class = "submitComment" (click)="submit()">Submit</button>
+
+<ng-container *ngIf = "isSuccess">
+  <h2 style="color: red"> Created! </h2>
+</ng-container>

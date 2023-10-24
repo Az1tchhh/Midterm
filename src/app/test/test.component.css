@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+.posts{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.post{
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+.name:hover{
+  cursor: pointer;
+}
+.like_button{
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.like_button:hover{
+  cursor: pointer;
+}
+.post_add_button{
+  border: none;
+  height: 25px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin-right: 10px;
+}
+.post_add_button:hover{
+  cursor: pointer;
+}

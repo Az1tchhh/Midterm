@@ -1,0 +1,19 @@
+<h1>Азыч Базыч</h1>
+<div class = "container">
+  <div class = "postAddition">
+    <button class = "post_add_button" [routerLink] = "['/addPost']">Do you want to add post?</button>
+  </div>
+  <div class = "posts div-column">
+    <div class = "post div-column" *ngFor = "let posty of posts">
+      <h2 class = "name" [routerLink] = "['/post', posty.id]">
+        {{posty.name}}
+      </h2>
+      <div class = "div-row">
+        <h3 class = "likes">
+          likes:{{posty.likes}}
+        </h3>
+        <img class = "like_button" (click)="putLike(posty.id)" src ="assets/like-svgrepo-com.svg">
+      </div>
+    </div>
+  </div>
+</div>

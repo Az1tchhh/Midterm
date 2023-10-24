@@ -1,0 +1,22 @@
+<div class = "post">
+  <h2 class = "name">
+    {{thePost.name}}
+  </h2>
+  <div class = "div-row">
+    <h3 class = "likes">
+      likes:{{thePost.likes}}
+    </h3>
+    <img class = "like_button" (click)="putLike(thePost.id)" src ="assets/like-svgrepo-com.svg">
+  </div>
+  <div class = "comments">
+    <div class = "div-column comment" *ngFor = "let comment of thePost.comments">
+      <h3>{{comment.user}}</h3>
+      <p>Comment: {{comment.comment}}</p>
+    </div>
+  </div>
+  <input type = "text"
+         placeholder = "Do you want to comment?"
+         class = "user_input_text"
+         [(ngModel)]="commentFromUser">
+  <button class = "comment_button" (click)="postComment()">Add comment</button>
+</div>
